@@ -78,18 +78,16 @@ Required Tools and Libraries
 
 As already stated, DatLib and my tools can be compiled on Windows using MinGW
 or CygWin and using GCC on Linux. In addition to these tools, you must ensure
-that zlib is installed and UPX is available (preferable but not essential).
+that zlib is installed.
 
 Here is a quick summary of the tools that you need:
 
 Windows: MinGW   http://sourceforge.net/projects/mingw
          CygWin  http://www.cygwin.com
          zlib    http://www.gzip.org/zlib/
-         UPX     http://upx.sourceforge.net/
 
 Linux:   GCC     Comes with your OS
          zlib    Comes with your OS
-         UPX     http://upx.sourceforge.net/
 
 
 Compiling
@@ -116,10 +114,6 @@ Notes:
 1) By default the executables will be created with .exe extensions but this
    obviously isn't desirable on Linux. To remove the extensions, you can just
    edit the makefiles and change the lines 'EXT=.exe' to 'EXT='.
-
-2) UPX is optional on Windows and Linux but the compilcation will seem to fail
-   if it is not installed. However, the compile will be fine and re-running
-   'make' will tell you that there is nothing more to do.
 
 
 Adding support for new dat formats

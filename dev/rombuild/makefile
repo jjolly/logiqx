@@ -53,7 +53,6 @@ $(OBJ)/rominfo.o: $(SRC)/rominfo.c $(SRC)/rombuild.h $(DLSRC)/macro.h
 $(EXE): $(OBJS)
 	@echo Linking $@...
 	$(LD) $(OBJS) $(LIBS) -o $@
-	$(UPX) $@
 
 #
 # Complete removal of built objects

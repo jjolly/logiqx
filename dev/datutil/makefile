@@ -46,7 +46,6 @@ $(OBJ)/%.o: $(SRC)/%.c $(SRC)/%.h $(DLSRC)/datlib.h $(DLSRC)/macro.h $(DLSRC)/ty
 $(EXE): $(OBJS)
 	@echo Linking $@...
 	$(LD) $(OBJS) $(LIBS) -o $@
-	$(UPX) $@
 
 #
 # Complete removal of built objects
